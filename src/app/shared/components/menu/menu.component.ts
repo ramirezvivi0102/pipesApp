@@ -11,10 +11,42 @@ export class MenuComponent {
   public menuItems : MenuItem[]=[];
   ngOnInit() {
     this.menuItems = [
-      {label:'New', icon: 'pi pi-fw pi-plus'},
-      {label:'New', icon: 'pi pi-fw pi-download'},
-      {label:'New', icon: 'pi pi-fw pi-refresh'},
-
+    {
+      label:' Pipes de Angular ', 
+      icon:'pi pi-desktop',
+      items:[
+        {
+          label: 'Textos y Fechas ',
+          icon:'pi pi-align-left',
+        },
+        {
+          label: 'Numeros ',
+          icon:'pi pi-dollar',
+        },
+        {
+          label: 'No comunes  ',
+          icon:'pi pi-globe ',
+        },
+      ]
+    },
+   {
+    label: 'Pipes personalizados ',
+    icon:'pi pi-cog ',
+    items:[
+      {
+        label: 'Otro elememto  ',
+        icon:'pi pi-cog',
+      },
+      {
+        label: 'Numeros ',
+        icon:'pi pi-dollar',
+      },
+      {
+        label: 'No comunes  ',
+        icon:'pi pi-globe ',
+      },
+    ]
+   }
     ];
     
   }
