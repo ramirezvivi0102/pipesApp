@@ -7,7 +7,7 @@ import { UncommonPageComponent } from './pages/uncommonPage/uncommonPage.compone
 const routes: Routes = [
 
   {
-    path:'basics',
+    path:'',
     component:BasicsPageComponent,
   },
   {
