@@ -6,22 +6,24 @@
 </p-panel>
 
 <div class="p-grid">
-
+  //Cambia letra a mayuscula 
   <div class="p-col-4">
     <p-card header="uppercase">
-      1
+      {{ nameLower | uppercase}}
     </p-card>
   </div>
 
+  //Cambia letra a minuscula 
   <div class="p-col-4">
     <p-card header="lowercase">
-      2
+      {{ nameUpper | lowercase}}
     </p-card>
   </div>
 
+  //Cambia letra primera mayuscula y las demas en minuscula 
   <div class="p-col-4">
     <p-card header="titlecase">
-      3
+      {{ fullname | titlecase}}
     </p-card>
   </div>
 
