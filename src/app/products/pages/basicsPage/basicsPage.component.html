@@ -8,21 +8,21 @@
 <div class="grid">
   <!-- Cambia letra a mayuscula -->
  
-  <div class="col-4">
+  <div class="col-12 md:col-4">
     <p-card header="uppercase">
       {{ nameLower | uppercase}}
     </p-card>
   </div>
 
  <!--  //Cambia letra a minuscula  -->
-  <div class="col-4">
+  <div class="col-12 md:col-4">
     <p-card header="lowercase">
       {{ nameUpper | lowercase}}
     </p-card>
   </div>
 
  <!--  //Cambia letra primera mayuscula y las demas en minuscula  -->
-  <div class="col-4">
+  <div class="col-12 md:col-4">
     <p-card header="titlecase">
       {{ fullname | titlecase}}
     </p-card>
