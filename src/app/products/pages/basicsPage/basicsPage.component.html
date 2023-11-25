@@ -1,27 +1,28 @@
-<p-panel [showHeader]="false">
-  <h1>Pipes Basicos </h1>
+<p-panel header="Pipes Basicos" class="p-2">
+  
   <p>
     Pipes incluídos en Angular - Usualmente en el Common Module
   </p>
 </p-panel>
 
-<div class="p-grid">
-  //Cambia letra a mayuscula 
-  <div class="p-col-4">
+<div class="grid">
+  <!-- Cambia letra a mayuscula -->
+ 
+  <div class="col-4">
     <p-card header="uppercase">
       {{ nameLower | uppercase}}
     </p-card>
   </div>
 
-  //Cambia letra a minuscula 
-  <div class="p-col-4">
+ <!--  //Cambia letra a minuscula  -->
+  <div class="col-4">
     <p-card header="lowercase">
       {{ nameUpper | lowercase}}
     </p-card>
   </div>
 
-  //Cambia letra primera mayuscula y las demas en minuscula 
-  <div class="p-col-4">
+ <!--  //Cambia letra primera mayuscula y las demas en minuscula  -->
+  <div class="col-4">
     <p-card header="titlecase">
       {{ fullname | titlecase}}
     </p-card>
