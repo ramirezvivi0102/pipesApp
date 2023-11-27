@@ -5,11 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './numbersPage.component.html',
   styleUrls: ['./numbersPage.component.css']
 })
-export class NumbersPageComponent implements OnInit {
+export class NumbersPageComponent {
 
-  constructor() { }
+  public totalSells: number = 2567789.5567;
+  public percent: number = 0.4856;
 
-  ngOnInit() {
-  }
 
 }

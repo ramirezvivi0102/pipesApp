@@ -1,3 +1,31 @@
-<p>
-  numbersPage works!
-</p>
+<p-panel header="Pipes Numericos" class="p-1">
+  
+  <p>
+    Pipes incluídos en Angular - Usualmente en el Common Module
+  </p>
+</p-panel>
+
+<div class="grid">
+
+  <!-- Ponemos decimales con el pipe number   (number: '1.2-2') este ejemplo es para dos decimales  -->
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Netas " subheader="del presente año">
+      {{ totalSells | number: '1.2-2' }}
+    </p-card>
+  </div>
+
+ <!-- utilizamos el pipe currency para colocar el simbolo de la moneda del pais que se esta trabajando  -->
+  <div class="col-12 md:col-4">
+    <p-card header="Ventas Brutas  " subheader="del presente año">
+      {{ totalSells | currency: 'COP': 'symbol-narrow': '1.4-4' }}
+    </p-card>
+  </div>
+
+   <!-- utilizamos el pipe percent para mostrar el porcentaje  con decimales  -->
+   <div class="col-12 md:col-4">
+    <p-card header="Ganancia porcentual  " subheader="del presente año">
+      {{ percent | percent: '1.2-2' }}
+    </p-card>
+  </div>
+
+</div>
